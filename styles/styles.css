@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -52,6 +60,24 @@ body {
   background-color: #000000;
 }
 
+.navigation {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-family: "PT Sans Narrow", sans-serif;
   line-height: 22px;
@@ -63,6 +89,15 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-logo {
+  width: 140px;
+  margin-right: 100px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #ffffff;
   background-color: #000000;
@@ -71,8 +106,34 @@ body {
   background-repeat: no-repeat;
 }
 
+.main-inner {
+  color: #242424;
+  background-color: #fbf7f4;
+  background-image: url("../images/bg-noisy.png");
+}
+
+.page-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #ffffff;
   text-align: center;
+}
+
+.advantages-item {
+  width: 270px
 }
 
 .advantages-title {
@@ -83,12 +144,16 @@ body {
 }
 
 .index-column {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
   color: #242424;
   background-color: #fbf7f4;
   background-image: url("../images/bg-noisy.png");
 }
 
 .services {
+  width: 390px;
   text-transform: uppercase;
 }
 
@@ -108,6 +173,10 @@ body {
   color: #af7842;
 }
 
+.gallery {
+  width: 390px;
+}
+
 .gallery-title {
   font-size: 32px;
   line-height: 35px;
@@ -116,6 +185,7 @@ body {
 }
 
 .contacts {
+  width: 350px;
   font-weight: 700;
 }
 
@@ -143,6 +213,10 @@ body {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #242424;
+}
+
+.appointment {
+  width: 430px;
 }
 
 .appointment-title {
@@ -189,6 +263,17 @@ body {
   text-transform: uppercase;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  width: 200px;
+  margin-right: 130px;
+}
+
 .footer-contacts-address {
   font-style: normal;
 }
@@ -219,12 +304,16 @@ body {
   text-transform: uppercase;
 }
 
+.footer-social {
+  margin-left: auto;
+  max-width: 190px;
+}
+
 .inner-header-title {
   font-size: 32px;
   line-height: 35px;
   text-transform: uppercase;
 }
-
 
 .breadcrumbs {
   color: #242424;
@@ -232,6 +321,19 @@ body {
 
 .breadcrumbs-link {
   color: inherit;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-right-column {
+  width: 700px;
 }
 
 .catalog-filter-title {
