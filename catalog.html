@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<header class="page-header main-container">
+<header class="page-header">
   <nav class="navigation" aria-label="Основная навигация по сайту">
     <a class="navigation-logo" href="index.html">
       <img class="page-header-logo" src="images/logo-short-light.svg" width="140" height="18"
@@ -24,7 +24,7 @@
         <a class="navigation-link" href="faq.html">Частые вопросы</a>
       </li>
     </ul>
-    <ul class="navigation-list user-list">
+    <ul class="navigation-list navigation-user">
       <li class="navigation-item">
         <a class="navigation-link" href="#">
           <span class="visually-hidden">Поиск</span>
@@ -43,7 +43,7 @@
     </ul>
   </nav>
 </header>
-<main class="main-inner">
+<main class="main-inner main-container">
   <div class="page-container">
     <header class="inner-header">
       <h1 class="inner-header-title">Каталог</h1>
@@ -202,8 +202,8 @@
             </article>
           </li>
         </ul>
-        <nav class="pagination" aria-label="Пагинация">
-          <ul class="pagination-list">
+        <nav class="pagination-container" aria-label="Пагинация">
+          <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-prev pagination-disabled" aria-disabled="true" tabindex="-1">
                 <span class="visually-hidden">Предыдущая страница</span>
