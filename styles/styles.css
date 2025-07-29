@@ -187,7 +187,7 @@ body {
 .index-column {
   display: flex;
   justify-content: space-between;
-  padding:40px;
+  padding: 40px;
   color: #242424;
   background-color: #fbf7f4;
   background-image: url("../images/bg-noisy.png");
@@ -267,15 +267,47 @@ body {
   width: 430px;
 }
 
+.appointment-form {
+  display: grid;
+  grid-template-columns: 114px 74px 208px;
+  gap: 19px 17px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.appointment-form .info {
+  display: none;
+}
+
+.field-group label,
+.field-group input {
+  display: block;
+  box-sizing: border-box;
+}
+
+.appointment-form-name {
+  grid-column: 1/ -1;
+}
+
+.appointment-submit {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
 .appointment-title {
-  margin: 0 0 28px;
+  margin-top: 0;
+  margin-bottom: 28px;
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.appointment-form {
+.appointment-info {
   color: #595959;
 }
 
@@ -439,12 +471,17 @@ body {
 }
 
 .product-list {
-  list-style-type: none;
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 20px;
+  margin: 0 0 24px;
   padding: 0;
+  list-style-type: none;
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
 }
 
